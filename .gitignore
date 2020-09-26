@@ -149,4 +149,12 @@ var/
 *ossutil*
 
 # for public end
+#
+# for hexo
+public/
+db.json
 
+# for ossutil
+ossutil*
+ossutil_output/
+.ossutil_checkpoint/
