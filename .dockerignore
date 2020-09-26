@@ -1,0 +1,7 @@
+node_modules/
+public/
+source/
+themes/
+db.json
+*.log
+nohup.out
