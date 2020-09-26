@@ -6,7 +6,6 @@ tags: [python]
 
 今天介绍一款堪称“造假大师”的 Python 模块 [Faker](https://github.com/joke2k/faker)
 
-
 <!-- more -->
 <!-- toc -->
 
@@ -27,8 +26,11 @@ $ pip install Faker
 使用
 
 <script src="https://code.jquery.com/jquery-2.0.0.js"></script>
-{% asset_jupyter /Users/wxnacy/.pyenv/shims/python ../../notebook/faker/quickstart.ipynb %}
 
+{% raw %}
+<iframe id='ipynb' marginheight="0" frameborder="0" width='924px' height='880px'  src="https://notebook.wxnacy.com/modules/faker/quickstart.html" style="scrolling:no;">
+</iframe>
+{% endraw %}
 
 Faker 有远不止以上的用法，使用 `dir(fake)` 可以查看更多的用法
 
@@ -36,8 +38,12 @@ Faker 有远不止以上的用法，使用 `dir(fake)` 可以查看更多的用�
 
 Faker 默认使用英文，当然也可以设置想要的语言
 
-<script src="https://code.jquery.com/jquery-2.0.0.js"></script>
-{% asset_jupyter /Users/wxnacy/.pyenv/shims/python ../../notebook/faker/locales.ipynb %}
+<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+
+{% raw %}
+<iframe id='ipynb' marginheight="0" frameborder="0" width='924px' height='880px'  src="https://notebook.wxnacy.com/modules/faker/locales.html" style="scrolling:no;">
+</iframe>
+{% endraw %}
 
 更多语言支持查看[文档](https://faker.readthedocs.io/en/master/locales.html)
 
@@ -46,6 +52,10 @@ Faker 默认使用英文，当然也可以设置想要的语言
 Faker 也可以在命令行中使用
 
 <script src="https://code.jquery.com/jquery-2.0.0.js"></script>
-{% asset_jupyter /Users/wxnacy/.pyenv/shims/python ../../notebook/faker/command.ipynb %}
+
+{% raw %}
+<iframe id='ipynb' marginheight="0" frameborder="0" width='924px' height='880px'  src="https://notebook.wxnacy.com/modules/faker/command.html" style="scrolling:no;">
+</iframe>
+{% endraw %}
 
 更多使用方式查看[文档](https://github.com/joke2k/faker#command-line-usage)

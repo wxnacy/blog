@@ -10,7 +10,11 @@ tags: [hexo, jupyter]
 <!-- toc -->
 
 <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
-{% asset_jupyter /Users/wxnacy/.pyenv/shims/python ../../notebook/faker/locales.ipynb %}
+
+{% raw %}
+<iframe id='ipynb' marginheight="0" frameborder="0" width='924px' height='880px'  src="https://notebook.wxnacy.com/modules/faker/locales.html" style="scrolling:no;">
+</iframe>
+{% endraw %}
 
 这需要 [hexo-jupyter-notebook](https://github.com/qiliux/hexo-jupyter-notebook) 插件的支持
 
