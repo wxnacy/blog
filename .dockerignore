@@ -5,3 +5,4 @@ themes/
 db.json
 *.log
 nohup.out
+# ossutil*

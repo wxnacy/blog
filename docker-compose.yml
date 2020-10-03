@@ -16,5 +16,4 @@ services:
             - OSS_ACCESS_KEY_ID=${OSS_ACCESS_KEY_ID}
             - OSS_ACCESS_KEY_SECRET=${OSS_ACCESS_KEY_SECRET}
             - OSS_ENDPOINT=${OSS_ENDPOINT}
-            - test=${HOME}
         restart: always

@@ -12,17 +12,20 @@ WORKDIR ${WORK_DIR}
 
 COPY package.json ${WORK_DIR}
 COPY package-lock.json ${WORK_DIR}
-
-RUN yarn config set registry https://registry.npm.taobao.org/ \
-    && yarn global add hexo-cli \
-    && yarn
-# RUN cnpm install co
-# RUN cnpm install pm2 -g
-
 COPY ossutil64 /usr/bin/ossutil
 
+RUN yarn --registry https://registry.npm.taobao.org/
+RUN yarn global add hexo-cli --registry https://registry.npm.taobao.org/
+
+ARG PROP=/root/.bashrc
+# SHELL ["/bin/bash", "-c"]
+# RUN echo "export TZ='Asia/Shanghai'" >> ${PROP} \
+  # && source ${PROP}
+
+ENV TZ Asia/Shanghai
+
 CMD ["hexo", "server", "--draft", "--debug"]
-# CMD ["pm2", "start", "pm2-config.json"]
 
 # docker build -t wxnacy/hexo .
+# docker build -t wxnacy/hexo:1.0.0 .
 # hexo g -f
