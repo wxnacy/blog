@@ -1,7 +1,11 @@
 ---
 title: 使用 Python 解析 Chrome 浏览器书签
-tags: [python, chrome]
+tags:
+  - python
+  - chrome
+date: 2020-10-02 21:34:21
 ---
+
 
 Chrome 浏览器的书签如果可以导出，并转换为我们需要的格式时，我们就可以编写各种插件来配合书签的使用。
 
@@ -105,3 +109,5 @@ Chrome 浏览器的书签存放位置在各个平台的区别
     "version":1
 }
 ```
+
+清晰了这个结构在写代码就很简单了，以书签栏为例，只需要将 `data['roots']['bookmark_bar']['children']` 进行循环遍历即可，代码详情可见 [demo](https://github.com/wxnacy/study/blob/master/python/simple/single_line_progress.py)
