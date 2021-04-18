@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Author: wxnacy(wxnacy@gmail.com)
+# Description:
+
+wget http://gosspublic.alicdn.com/ossutil/1.7.3/ossutil64 -O bin/ossutil64 && chmod 755 ossutil64
