@@ -147,6 +147,7 @@ var/
 *.egg
 
 *ossutil*
+!bin/download_ossutil
 
 # for public end
 #
