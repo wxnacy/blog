@@ -13,15 +13,15 @@ Vagrant 是非常强大好用的虚拟机管理工具，它依赖于 virtualbox�
 ## 安装
 
 ```bash
-$ brew cask install virtualbox
-$ brew cask install vagrant
+$ brew install --cask virtualbox
+$ brew install --cask vagrant
 ```
 
 ## 使用
 
 ### 快速开始
 
-**初始化 box **
+**初始化 box**
 
 使用 `centos7` 系统，你也可以从 [Discover Vagrant Boxes](https://app.vagrantup.com/boxes/search) 查找其他系统
 
