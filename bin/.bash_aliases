@@ -47,3 +47,9 @@ alias assh="autossh -M 0 "
 # python
 alias pipi="pip install -i https://pypi.tuna.tsinghua.edu.cn/simple"
 alias pydb="python -m pdb"
+
+# hexo
+alias n="hexo new"
+alias nd="hexo new draft"
+alias p="hexo publish"
+alias d="bin/deploy.sh"

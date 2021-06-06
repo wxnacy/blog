@@ -2,4 +2,5 @@
 # Author: wxnacy(wxnacy@gmail.com)
 # Description:
 
-docker exec -it blog /bin/bash
+docker exec -it blog /root/blog/bin/echo_helper
+

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Author: wxnacy(wxnacy@gmail.com)
+# Description:
+
+echo "内部脚本:"
+echo "n: 新建当日文章"
+echo "p: 发布临时文件"
+echo "d: 发布临时文件"
+/bin/bash
