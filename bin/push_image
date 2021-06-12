@@ -2,7 +2,15 @@
 # Author: wxnacy(wxnacy@gmail.com)
 # Description:
 
-docker build -t wxnacy/hexo:$1 .
-docker build -t wxnacy/hexo:latest .
-docker push wxnacy/hexo:$1
+tag=${1}
+
+if [ ! ${tag} ]
+then
+    tag=`cat VERSION`
+fi
+echo $tag
+
+# docker build -t wxnacy/hexo:$tag .
+# docker build -t wxnacy/hexo:latest .
+docker push wxnacy/hexo:$tag
 docker push wxnacy/hexo:latest
