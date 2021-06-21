@@ -3,22 +3,35 @@ title: Python super() 继承方法
 tags:
   - python
 date: 2018-02-22 10:31:28
+updated: 2021-06-21 12:54:44
 ---
-
 
 super() 函数是用于调用父类(超类)的一个方法。
 
-<!-- more --><!-- toc -->
+<!-- more -->
+<!-- toc -->
+
 super 是用来解决多重继承问题的，直接用类名调用父类方法在使用单继承的时候没问题，但是如果使用多继承，会涉及到查找顺序（MRO）、重复调用（钻石继承）等种种问题。
 
 MRO 就是类的方法解析顺序表, 其实也就是继承父类方法时的顺序表。
 
 ## py2
 ```python
-class TestJson(dict):
+
+class BaseModel(object):
+    pass
+
+class TestJson(BaseModel):
     def __init__(self, *args, **kwargs):
         super(TestJson, self).__init__(*args, **kwargs)
 ```
+
+**注意** 在 python2 中，基类需要继承 `object` 才可以，否则会报错
+
+```bash
+super() argument 1 must be type, not classobj
+```
+
 ## py3
 ```python
 class TestJson(dict):
