@@ -3,7 +3,7 @@
 # Description: 发布到 oss
 # ossutil 文档: https://help.aliyun.com/document_detail/120075.html?spm=a2c4g.11186623.6.732.36381c7aWzhGGo
 # 安装
-# curl -o /usr/local/bin/ossutil http://gosspublic.alicdn.com/ossutil/1.6.18/ossutilmac64 && chmod 755 /usr/local/bin/ossutil
+# curl -o /usr/local/bin/ossutil https://gosspublic.alicdn.com/ossutil/1.7.10/ossutilmac64 && chmod 755 /usr/local/bin/ossutil
 
 env=$1
 bucket=blog-test-cn
