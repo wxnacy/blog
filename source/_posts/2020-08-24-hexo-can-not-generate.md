@@ -18,3 +18,27 @@ Hexo 环境用 Dockerfile 配好，`hexo server` 是正常的，但是 `hexo gen
 Google 后发现果然是版本问题，换到当前稳定版本 12.18.3
 
 再重新执行 `hexo g -f` 强制重新生成静态页面，果然一切正常。
+
+## 2022-04-24 更新
+
+来到 node 稳定版本 16.14.2 的时间点，再次出现 generate 文件为 0 的情况。
+
+这次修改文件 package.json `dependencies` 部分数据后生效。
+
+```json
+{
+  "dependencies": {
+    "hexo": "^4.0.0",
+    "hexo-deployer-git": "2.0.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-json-content": "^4.1.6",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-server": "^1.0.0"
+  }
+}
+```
